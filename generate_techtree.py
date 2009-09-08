@@ -35,6 +35,8 @@ def read_conf(conf):
 				if 'size=' in line:
 					data['type'] = 'building'
 					data['size'] = line.replace('size=', '')
+				elif 'enhancement=' in line:
+					data['enhancement'] = line.replace('enhancement=', '')
 				elif 'output=' in line:
 					output = [ line.replace('output=', '') ]
 					if data.has_key('output'):
@@ -85,4 +87,6 @@ for building in data['buildings']:
 	if data.has_key('output'):
 		for output in data['output']:
 			print '	"%s" -> "%s"' % (building['id'], output)
+	if data.has_key('enhancement'):
+		print '	"%s" -> "%s"' % (building['id'], data['enhancement'])
 print '}'
