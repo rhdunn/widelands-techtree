@@ -1,0 +1,25 @@
+This project generates the economic tech trees for the different tribes in the
+Widelands game.
+
+Usage:
+
+	make DIR=/path/to/widelands dot
+		--	Generate the dot files for the economic tech trees.
+			This uses the conf files in the specified Widelands
+			sources.
+
+	make svgz
+		--	Generate svgz images from the tech tree dot source
+			files.
+
+	make png
+		--	Generate svgz images from the tech tree dot source
+			files.
+
+	make
+		--	Generate svgz and png images from the tech tree dot
+			source files.
+
+	make clean
+		--	Removes the generated svgz and png images files.
+
