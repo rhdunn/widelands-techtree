@@ -74,13 +74,16 @@ def read_conf(conf):
 tribe_path = sys.argv[1]
 data = read_conf(os.path.join(tribe_path, 'conf'))
 
+colors = {'small': 'red', 'medium': 'orange', 'big': 'green', 'mine': 'brown'}
+
 print 'digraph "Widelands %s Tribe Tech Tree"' % data['tribe']
 print '{'
 for ware in data['wares']:
 	print '	"%s" [shape=plaintext, label="%s"]' % (ware['id'], ware['name'])
 for building in data['buildings']:
-	print '	"%s" [shape=box, color=red, label="%s"]' % (building['id'], building['name'])
 	data = read_conf(os.path.join(tribe_path, building['id'], 'conf'))
+
+	print '	"%s" [shape=box, color=%s, label="%s"]' % (building['id'], colors[ data['size'] ], building['name'])
 	if data.has_key('input'):
 		for input in data['input']:
 			print '	"%s" -> "%s"' % (input, building['id'])
