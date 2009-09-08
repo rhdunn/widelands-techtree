@@ -1,0 +1,213 @@
+// Based on: http://wl.widelands.org/help/barbarians/buildings/
+
+digraph "Widelands Barbarians Tribe Tech Tree"
+{
+	"Rocks" [shape=ellipse]
+	"Trees" [shape=ellipse]
+	"Animals" [shape=ellipse]
+
+	// wares
+
+	"Water" [shape=plaintext]
+	"Meat" [shape=plaintext]
+	"Fish" [shape=plaintext]
+	"Raw Stone" [shape=plaintext]
+	"Trunk" [shape=plaintext]
+	"Blackwood" [shape=plaintext]
+	"Thatch Reed" [shape=plaintext]
+	"Grout" [shape=plaintext]
+	"Wheat" [shape=plaintext]
+	"Pitta Bread" [shape=plaintext]
+	"Beer" [shape=plaintext]
+	"Strong Beer" [shape=plaintext]
+	"Coal" [shape=plaintext]
+	"Iron Ore" [shape=plaintext]
+	"Iron" [shape=plaintext]
+	"Goldstone" [shape=plaintext]
+	"Gold" [shape=plaintext]
+	"Ration" [shape=plaintext]
+	"Snack" [shape=plaintext]
+	"Meal" [shape=plaintext]
+	"Tools" [shape=plaintext]
+	"Axes" [shape=plaintext]
+	"War Axes" [shape=plaintext]
+	"Helmets" [shape=plaintext]
+	"Cloth" [shape=plaintext]
+
+	// small buildings
+
+	"Fisher's Hut" [shape=box, color=red]
+	"Gamekeeper's Hut" [shape=box, color=red]
+	"Hunter's Hut" [shape=box, color=red]
+	"Lumberjack's Hut" [shape=box, color=red]
+	"Quarry" [shape=box, color=red]
+	"Ranger's Hut" [shape=box, color=red]
+	"Well" [shape=box, color=red]
+
+	// medium buildings
+
+	"Axe Factory" [shape=box, color=orange]
+	"War Mill" [shape=box, color=orange]
+	"Bakery" [shape=box, color=orange]
+	"Charcoal Burner" [shape=box, color=orange]
+	"Wood Hardener" [shape=box, color=orange]
+	"Fernery" [shape=box, color=orange]
+	"Lime Kiln" [shape=box, color=orange]
+	"Metalwork Shop" [shape=box, color=orange]
+	"Micro Brewery" [shape=box, color=orange]
+	"Brewery" [shape=box, color=orange]
+	"Smelting Works" [shape=box, color=orange]
+	"Tavern" [shape=box, color=orange]
+	"Inn" [shape=box, color=orange]
+	"Big Inn" [shape=box, color=orange]
+
+	// large buildings
+
+	"Farm" [shape=box, color=green]
+	"Battle Arena" [shape=box, color=green]
+	"Weaving Mill" [shape=box, color=green]
+	"Helmsmithy" [shape=box, color=green]
+	"Trainingscamp" [shape=box, color=green]
+
+	// mines
+
+	"Coal Mine" [shape=box, color=brown]
+	"Gold Mine" [shape=box, color=brown]
+	"Granite Mine" [shape=box, color=brown]
+	"Iron Ore Mine" [shape=box, color=brown]
+
+	"Deep Coal Mine" [shape=box, color=brown]
+	"Deep Gold Mine" [shape=box, color=brown]
+	"Deep Iron Ore Mine" [shape=box, color=brown]
+
+	"Deeper Coal Mine" [shape=box, color=brown]
+	"Deeper Gold Mine" [shape=box, color=brown]
+	"Deeper Iron Ore Mine" [shape=box, color=brown]
+
+	// enhancements
+
+	"Beer" -> "Strong Beer" [color=blue]
+	"Ration" -> "Snack" -> "Meal" [color=blue]
+	"Axes" -> "War Axes" [color=blue]
+
+	"Micro Brewery" -> "Brewery" [color=blue]
+	"Tavern" -> "Inn" -> "Big Inn" [color=blue]
+	"Coal Mine" -> "Deep Coal Mine" -> "Deeper Coal Mine" [color=blue]
+	"Gold Mine" -> "Deep Gold Mine" -> "Deeper Gold Mine" [color=blue]
+	"Iron Ore Mine" -> "Deep Iron Ore Mine" -> "Deeper Iron Ore Mine" [color=blue]
+	"Axe Factory" -> "War Mill" [color=blue]
+
+	// produces
+
+	"Fisher's Hut" -> "Fish"
+	"Gamekeeper's Hut" -> "Animals"
+	"Hunter's Hut" -> "Meat"
+	"Lumberjack's Hut" -> "Trunk"
+	"Quarry" -> "Raw Stone"
+	"Ranger's Hut" -> "Trees"
+	"Well" -> "Water"
+
+	"Axe Factory" -> "Axes"
+	"War Mill" -> "War Axes"
+	"Bakery" -> "Pitta Bread"
+	"Charcoal Burner" -> "Coal"
+	"Wood Hardener" -> "Blackwood"
+	"Fernery" -> "Thatch Reed"
+	"Lime Kiln" -> "Grout"
+	"Metalwork Shop" -> "Tools"
+	"Micro Brewery" -> "Beer"
+	"Brewery" -> "Strong Beer"
+	"Smelting Works" -> "Iron"
+	"Smelting Works" -> "Gold"
+	"Tavern" -> "Ration"
+	"Inn" -> "Ration"
+	"Inn" -> "Snack"
+	"Big Inn" -> "Ration"
+	"Big Inn" -> "Snack"
+	"Big Inn" -> "Meal"
+
+	"Farm" -> "Wheat"
+	"Helmsmithy" -> "Helmets"
+	"Weaving Mill" -> "Cloth"
+
+	"Coal Mine" -> "Coal"
+	"Gold Mine" -> "Goldstone"
+	"Granite Mine" -> "Raw Stone"
+	"Iron Ore Mine" -> "Iron Ore"
+
+	"Deep Coal Mine" -> "Coal"
+	"Deep Gold Mine" -> "Goldstone"
+	"Deep Iron Ore Mine" -> "Iron Ore"
+
+	"Deeper Coal Mine" -> "Coal"
+	"Deeper Gold Mine" -> "Goldstone"
+	"Deeper Iron Ore Mine" -> "Iron Ore"
+
+	// consumes
+
+	"Trees" -> "Lumberjack's Hut"
+	"Animals" -> "Hunter's Hut"
+	"Rocks" -> "Quarry"
+
+	"Iron" -> "Axe Factory"
+	"Coal" -> "Axe Factory"
+	"Gold" -> "War Mill"
+	"Iron" -> "War Mill"
+	"Coal" -> "War Mill"
+	"Wheat" -> "Bakery"
+	"Water" -> "Bakery"
+	"Trunk" -> "Charcoal Burner"
+	"Trunk" -> "Wood Hardener"
+	"Raw Stone" -> "Lime Kiln"
+	"Water" -> "Lime Kiln"
+	"Coal" -> "Lime Kiln"
+	"Trunk" -> "Metalwork Shop"
+	"Iron" -> "Metalwork Shop"
+	"Wheat" -> "Micro Brewery"
+	"Water" -> "Micro Brewery"
+	"Wheat" -> "Brewery"
+	"Water" -> "Brewery"
+	"Goldstone" -> "Smelting Works"
+	"Iron Ore" -> "Smelting Works"
+	"Coal" -> "Smelting Works"
+	"Fish" -> "Tavern"
+	"Meat" -> "Tavern"
+	"Pitta Bread" -> "Tavern"
+	"Fish" -> "Inn"
+	"Meat" -> "Inn"
+	"Beer" -> "Inn"
+	"Pitta Bread" -> "Inn"
+	"Fish" -> "Big Inn"
+	"Meat" -> "Big Inn"
+	"Beer" -> "Big Inn"
+	"Strong Beer" -> "Big Inn"
+	"Pitta Bread" -> "Big Inn"
+
+	"Fish" -> "Battle Arena"
+	"Meat" -> "Battle Arena"
+	"Pitta Bread" -> "Battle Arena"
+	"Strong Beer" -> "Battle Arena"
+	"Thatch Reed" -> "Weaving Mill"
+	"Gold" -> "Helmsmithy"
+	"Iron" -> "Helmsmithy"
+	"Coal" -> "Helmsmithy"
+	"Fish" -> "Trainingscamp"
+	"Meat" -> "Trainingscamp"
+	"Pitta Bread" -> "Trainingscamp"
+	"Helmets" -> "Trainingscamp"
+	"Axes" -> "Trainingscamp"
+	"War Axes" -> "Trainingscamp"
+
+	"Ration" -> "Coal Mine"
+	"Ration" -> "Gold Mine"
+	"Ration" -> "Granite Mine"
+	"Ration" -> "Iron Ore Mine"
+
+	"Snack" -> "Deep Coal Mine"
+	"Snack" -> "Deep Gold Mine"
+	"Snack" -> "Deep Iron Ore Mine"
+
+	"Meal" -> "Deeper Coal Mine"
+	"Meal" -> "Deeper Gold Mine"
+	"Meal" -> "Deeper Iron Ore Mine"
+}

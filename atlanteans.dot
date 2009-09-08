@@ -1,0 +1,173 @@
+// Based on: http://wl.widelands.org/help/atlanteans/buildings/
+
+digraph "Widelands Atlanteans Tribe Tech Tree"
+{
+	"Rocks" [shape=ellipse]
+	"Trees" [shape=ellipse]
+	"Animals" [shape=ellipse]
+
+	// wares
+
+	"Meat" [shape=plaintext]
+	"Smoked Meat" [shape=plaintext]
+	"Fish" [shape=plaintext]
+	"Smoked Fish" [shape=plaintext]
+	"Stone" [shape=plaintext]
+	"Trunk" [shape=plaintext]
+	"Planks" [shape=plaintext]
+	"Water" [shape=plaintext]
+	"Coal" [shape=plaintext]
+	"Iron Ore" [shape=plaintext]
+	"Iron" [shape=plaintext]
+	"Gold Ore" [shape=plaintext]
+	"Gold" [shape=plaintext]
+	"Gold Yarn" [shape=plaintext]
+	"Diamond" [shape=plaintext]
+	"Quartz" [shape=plaintext]
+	"Spideryarn" [shape=plaintext]
+	"Blackroot" [shape=plaintext]
+	"Blackroot Flour" [shape=plaintext]
+	"Corn" [shape=plaintext]
+	"Cornflour" [shape=plaintext]
+	"Bread" [shape=plaintext]
+	"Spidercloth" [shape=plaintext]
+	"Tools" [shape=plaintext]
+	"Shields" [shape=plaintext]
+	"Tabards" [shape=plaintext]
+	"Tridents" [shape=plaintext]
+
+	// small buildings
+
+	"Forester's House" [shape=box, color=red]
+	"Fisher's House" [shape=box, color=red]
+	"Goldweaver" [shape=box, color=red]
+	"Hunter's House" [shape=box, color=red]
+	"Quarry" [shape=box, color=red]
+	"Well" [shape=box, color=red]
+	"Woodcutter's House" [shape=box, color=red]
+
+	// medium buildings
+
+	"Armoursmithy" [shape=box, color=orange]
+	"Bakery" [shape=box, color=orange]
+	"Charcoal Burner's House" [shape=box, color=orange]
+	"Dungeon" [shape=box, color=orange]
+	"Mill" [shape=box, color=orange]
+	"Sawmill" [shape=box, color=orange]
+	"Smelting Works" [shape=box, color=orange]
+	"Smokery" [shape=box, color=orange]
+	"Toolsmithy" [shape=box, color=orange]
+	"Weapon Smithy" [shape=box, color=orange]
+
+	// large buildings
+
+	"Blackroot Farm" [shape=box, color=orange]
+	"Farm" [shape=box, color=orange]
+	"Spider Farm" [shape=box, color=orange]
+	"Weaving Mill" [shape=box, color=orange]
+	"Labyrinth" [shape=box, color=orange]
+
+	// mines
+
+	"Coal Mine" [shape=box, color=brown]
+	"Gold Mine" [shape=box, color=brown]
+	"Iron Mine" [shape=box, color=brown]
+	"Crystal Mine" [shape=box, color=brown]
+
+	// produces
+
+	"Forester's House" -> "Trees"
+	"Fisher's House" -> "Fish"
+	"Goldweaver" -> "Gold Yarn"
+	"Hunter's House" -> "Meat" // Is this correct? It isn't on the wiki page.
+	"Quarry" -> "Stone"
+	"Well" -> "Water"
+	"Woodcutter's House" -> "Trunk"
+
+	"Armoursmithy" -> "Shields"
+	"Bakery" -> "Bread"
+	"Charcoal Burner's House" -> "Coal"
+	"Mill" -> "Blackroot Flour"
+	"Mill" -> "Cornflour"
+	"Sawmill" -> "Planks"
+	"Smelting Works" -> "Iron"
+	"Smelting Works" -> "Gold"
+	"Smokery" -> "Smoked Fish"
+	"Smokery" -> "Smoked Meat"
+	"Toolsmithy" -> "Tools"
+	"Weapon Smithy" -> "Tridents"
+
+	"Blackroot Farm" -> "Blackroot"
+	"Farm" -> "Corn"
+	"Spider Farm" -> "Spideryarn"
+	"Weaving Mill" -> "Spidercloth"
+	"Weaving Mill" -> "Tabards"
+
+	"Coal Mine" -> "Coal"
+	"Gold Mine" -> "Gold Ore"
+	"Iron Mine" -> "Iron Ore"
+	"Crystal Mine" -> "Diamond"
+	"Crystal Mine" -> "Quartz"
+	"Crystal Mine" -> "Stone"
+
+	// consumes
+
+	"Animals" -> "Hunter's House"
+	"Rocks" -> "Quarry"
+	"Trees" -> "Woodcutter's House"
+
+	"Gold" -> "Goldweaver"
+
+	"Gold" -> "Armoursmithy"
+	"Iron" -> "Armoursmithy"
+	"Coal" -> "Armoursmithy"
+	"Water" -> "Bakery"
+	"Blackroot Flour" -> "Bakery"
+	"Cornflour" -> "Bakery"
+	"Trunk" -> "Charcoal Burner's House"
+	"Tridents" -> "Dungeon"
+	"Smoked Fish" -> "Dungeon"
+	"Smoked Meat" -> "Dungeon"
+	"Bread" -> "Dungeon"
+	"Blackroot" -> "Mill"
+	"Corn" -> "Mill"
+	"Iron Ore" -> "Smelting Works"
+	"Gold Ore" -> "Smelting Works"
+	"Trunk" -> "Sawmill"
+	"Trunk" -> "Smokery"
+	"Fish" -> "Smokery"
+	"Meat" -> "Smokery"
+	"Iron" -> "Toolsmithy"
+	"Trunk" -> "Toolsmithy"
+	"Spidercloth" -> "Toolsmithy"
+	"Iron" -> "Weapon Smithy"
+	"Gold" -> "Weapon Smithy"
+	"Coal" -> "Weapon Smithy"
+	"Planks" -> "Weapon Smithy"
+
+	"Corn" -> "Spider Farm"
+	"Water" -> "Spider Farm"
+	"Gold Yarn" -> "Weaving Mill"
+	"Spideryarn" -> "Weaving Mill"
+	"Tabards" -> "Labyrinth"
+	"Shields" -> "Labyrinth"
+	"Smoked Fish" -> "Labyrinth"
+	"Smoked Meat" -> "Labyrinth"
+	"Bread" -> "Labyrinth"
+
+	"Bread" -> "Coal Mine"
+	"Smoked Fish" -> "Coal Mine"
+	"Smoked Meat" -> "Coal Mine"
+
+	"Bread" -> "Gold Mine"
+	"Smoked Fish" -> "Gold Mine"
+	"Smoked Meat" -> "Gold Mine"
+
+	"Bread" -> "Iron Mine"
+	"Smoked Fish" -> "Iron Mine"
+	"Smoked Meat" -> "Iron Mine"
+
+	"Bread" -> "Crystal Mine"
+	"Smoked Fish" -> "Crystal Mine"
+	"Smoked Meat" -> "Crystal Mine"
+}

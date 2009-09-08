@@ -1,0 +1,209 @@
+// Based on: http://wl.widelands.org/help/empire/buildings/
+
+digraph "Widelands Imperials Tribe Tech Tree"
+{
+	"Rocks" [shape=ellipse]
+	"Trees" [shape=ellipse]
+	"Animals" [shape=ellipse]
+
+	// wares
+
+	"Fish" [shape=plaintext]
+	"Meat" [shape=plaintext]
+	"Water" [shape=plaintext]
+	"Trunk" [shape=plaintext]
+	"Wood" [shape=plaintext]
+	"Stones" [shape=plaintext]
+	"Marble" [shape=plaintext]
+	"Marble Column" [shape=plaintext]
+	"Wheat" [shape=plaintext]
+	"Flour" [shape=plaintext]
+	"Bread" [shape=plaintext]
+	"Ration" [shape=plaintext]
+	"Meal" [shape=plaintext]
+	"Beer" [shape=plaintext]
+	"Coal" [shape=plaintext]
+	"Iron Ore" [shape=plaintext]
+	"Iron" [shape=plaintext]
+	"Goldstone" [shape=plaintext]
+	"Gold" [shape=plaintext]
+	"Wool" [shape=plaintext]
+	"Cloth" [shape=plaintext]
+	"Armour" [shape=plaintext]
+	"Weapons" [shape=plaintext]
+	"Tools" [shape=plaintext]
+	"Grape" [shape=plaintext]
+	"Wine" [shape=plaintext]
+
+	// small buildings
+
+	"Fisher's House" [shape=box, color=red]
+	"Forester's House" [shape=box, color=red]
+	"Hunter's House" [shape=box, color=red]
+	"Lumberjack's House" [shape=box, color=red]
+	"Quarry" [shape=box, color=red]
+	"Well" [shape=box, color=red]
+
+	// medium buildings
+
+	"Armour Smithy" [shape=box, color=orange]
+	"Bakery" [shape=box, color=orange]
+	"Brewery" [shape=box, color=orange]
+	"Charcoal Burner" [shape=box, color=orange]
+	"Mill" [shape=box, color=orange]
+	"Sawmill" [shape=box, color=orange]
+	"Smelting Works" [shape=box, color=orange]
+	"Stonemason's House" [shape=box, color=orange]
+	"Tavern" [shape=box, color=orange]
+	"Inn" [shape=box, color=orange]
+	"Toolsmithy" [shape=box, color=orange]
+	"Vineyard" [shape=box, color=orange]
+	"Winery" [shape=box, color=orange]
+
+	// large buildings
+
+	"Arena" [shape=box, color=green]
+	"Colosseum" [shape=box, color=green]
+	"Farm" [shape=box, color=green]
+	"Piggery" [shape=box, color=green]
+	"Sheep Farm" [shape=box, color=green]
+	"Trainingscamp" [shape=box, color=green]
+	"Weapon Smithy" [shape=box, color=green]
+	"Weaving Mill" [shape=box, color=green]
+
+	// mines
+
+	"Coal Mine" [shape=box, color=brown]
+	"Gold Mine" [shape=box, color=brown]
+	"Iron Mine" [shape=box, color=brown]
+	"Marble Mine" [shape=box, color=brown]
+
+	"Deep Coal Mine" [shape=box, color=brown]
+	"Deep Gold Mine" [shape=box, color=brown]
+	"Deep Iron Mine" [shape=box, color=brown]
+	"Deep Marble Mine" [shape=box, color=brown]
+
+	// enhancements
+
+	"Ration" -> "Meal" [color=blue]
+
+	"Tavern" -> "Inn" [color=blue]
+	"Arena" -> "Colosseum" [color=blue]
+	"Iron Mine" -> "Deep Iron Mine" [color=blue]
+	"Coal Mine" -> "Deep Coal Mine" [color=blue]
+	"Gold Mine" -> "Deep Gold Mine" [color=blue]
+	"Marble Mine" -> "Deep Marble Mine" [color=blue]
+
+	// produces
+
+	"Fisher's House" -> "Fish"
+	"Forester's House" -> "Trees"
+	"Hunter's House" -> "Meat" // Is this correct? It isn't on the wiki page.
+	"Lumberjack's House" -> "Trunk"
+	"Quarry" -> "Stones"
+	"Quarry" -> "Marble"
+	"Well" -> "Water"
+
+	"Armour Smithy" -> "Armour"
+	"Bakery" -> "Bread"
+	"Brewery" -> "Beer"
+	"Charcoal Burner" -> "Coal"
+	"Mill" -> "Flour"
+	"Sawmill" -> "Wood"
+	"Smelting Works" -> "Gold"
+	"Smelting Works" -> "Iron"
+	"Stonemason's House" -> "Marble Column"
+	"Tavern" -> "Ration"
+	"Inn" -> "Meal"
+	"Toolsmithy" -> "Tools"
+	"Vineyard" -> "Grape"
+	"Winery" -> "Wine"
+
+	"Farm" -> "Wheat"
+	"Piggery" -> "Meat"
+	"Sheep Farm" -> "Wool"
+	"Weaving Mill" -> "Cloth"
+	"Weapon Smithy" -> "Weapons"
+
+	"Coal Mine" -> "Coal"
+	"Gold Mine" -> "Goldstone"
+	"Iron Mine" -> "Iron Ore"
+	"Marble Mine" -> "Stones"
+	"Marble Mine" -> "Marble"
+
+	"Deep Coal Mine" -> "Coal"
+	"Deep Gold Mine" -> "Goldstone"
+	"Deep Iron Mine" -> "Iron Ore"
+	"Deep Marble Mine" -> "Stones"
+	"Deep Marble Mine" -> "Marble"
+
+	// consumes
+
+	"Animals" -> "Hunter's House"
+	"Trees" -> "Lumberjack's House"
+	"Rocks" -> "Quarry"
+
+	"Gold" -> "Armour Smithy"
+	"Cloth" -> "Armour Smithy"
+	"Iron" -> "Armour Smithy"
+	"Coal" -> "Armour Smithy"
+	"Flour" -> "Bakery"
+	"Water" -> "Bakery"
+	"Wheat" -> "Brewery"
+	"Water" -> "Brewery"
+	"Trunk" -> "Charcoal Burner"
+	"Trunk" -> "Sawmill"
+	"Wheat" -> "Mill"
+	"Goldstone" -> "Smelting Works"
+	"Iron Ore" -> "Smelting Works"
+	"Coal" -> "Smelting Works"
+	"Marble" -> "Stonemason's House"
+	"Fish" -> "Tavern"
+	"Bread" -> "Tavern"
+	"Meat" -> "Tavern"
+	"Fish" -> "Inn"
+	"Bread" -> "Inn"
+	"Meat" -> "Inn"
+	"Trunk" -> "Toolsmithy"
+	"Iron" -> "Toolsmithy"
+	"Grape" -> "Winery"
+
+	"Fish" -> "Arena"
+	"Bread" -> "Arena"
+	"Meat" -> "Arena"
+	"Fish" -> "Colosseum"
+	"Bread" -> "Colosseum"
+	"Meat" -> "Colosseum"
+	"Wheat" -> "Piggery"
+	"Water" -> "Piggery"
+	"Wheat" -> "Sheep Farm"
+	"Water" -> "Sheep Farm"
+	"Wool" -> "Weaving Mill"
+	"Gold" -> "Weapon Smithy"
+	"Iron" -> "Weapon Smithy"
+	"Coal" -> "Weapon Smithy"
+	"Wood" -> "Weapon Smithy"
+	"Weapons" -> "Trainingscamp"
+	"Armour" -> "Trainingscamp"
+	"Fish" -> "Trainingscamp"
+	"Bread" -> "Trainingscamp"
+	"Meat" -> "Trainingscamp"
+
+	"Beer" -> "Coal Mine"
+	"Ration" -> "Coal Mine"
+	"Wine" -> "Gold Mine"
+	"Ration" -> "Gold Mine"
+	"Beer" -> "Iron Mine"
+	"Ration" -> "Iron Mine"
+	"Wine" -> "Marble Mine"
+	"Ration" -> "Marble Mine"
+
+	"Beer" -> "Deep Coal Mine"
+	"Meal" -> "Deep Coal Mine"
+	"Wine" -> "Deep Gold Mine"
+	"Meal" -> "Deep Gold Mine"
+	"Beer" -> "Deep Iron Mine"
+	"Meal" -> "Deep Iron Mine"
+	"Wine" -> "Deep Marble Mine"
+	"Meal" -> "Deep Marble Mine"
+}
