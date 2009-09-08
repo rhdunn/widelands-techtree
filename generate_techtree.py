@@ -101,6 +101,8 @@ for building in data['buildings']:
 	if data.has_key('output'):
 		for output in data['output']:
 			print '	"%s" -> "%s" [color=green]' % (building['id'], output)
+	elif building['id'] == 'hunters_house':
+		print '	"%s" -> "meat" [color=green]' % building['id']
 
 	if data.has_key('enhancement'):
 		print '	"%s" -> "%s" [color=blue]' % (building['id'], data['enhancement'])
