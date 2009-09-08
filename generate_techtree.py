@@ -51,6 +51,9 @@ def read_conf(conf):
 			elif section == 'tribe':
 				if 'name=' in line:
 					data['tribe'] = line[line.find('=') + 3:]
+			elif section == 'aihints':
+				if 'renews_map_resource=' in line:
+					data['renews'] = line[line.find('=') + 1:]
 			elif section == 'ware types':
 				if '=' in line:
 					id = line[:line.find('=')]
@@ -79,8 +82,12 @@ colors = {'small': 'firebrick2', 'medium': 'orange', 'big': 'green', 'mine': 'co
 print 'digraph "Widelands %s Tribe Tech Tree"' % data['tribe']
 print '{'
 
+# wares:
+
 for ware in data['wares']:
 	print '	"%s" [shape=plaintext, label="%s"]' % (ware['id'], ware['name'])
+
+# buildings:
 
 for building in data['buildings']:
 	data = read_conf(os.path.join(tribe_path, building['id'], 'conf'))
@@ -97,5 +104,8 @@ for building in data['buildings']:
 
 	if data.has_key('enhancement'):
 		print '	"%s" -> "%s" [color=blue]' % (building['id'], data['enhancement'])
+
+	if data.has_key('renews'):
+		print '	"%s" -> "%s" [color=magenta]' % (building['id'], data['renews'])
 
 print '}'
