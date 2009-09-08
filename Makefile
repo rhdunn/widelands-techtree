@@ -1,5 +1,10 @@
 all: svgz png
 
+dot:
+	python generate_techtree.py ${DIR}/tribes/barbarians > barbarians.dot
+	python generate_techtree.py ${DIR}/tribes/empire > imperials.dot
+	python generate_techtree.py ${DIR}/tribes/atlanteans > atlanteans.dot
+
 svgz:
 	dot -Tsvg barbarians.dot | gzip -c > barbarians.svgz
 	dot -Tsvg imperials.dot | gzip -c > imperials.svgz
