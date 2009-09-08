@@ -20,6 +20,7 @@
 # - Suite 330, Boston, MA 02111-1307, USA.
 
 import sys
+import os.path
 
 # NOTE: ConfigParser in python expects a section header at the start, so can't be used here.
 def read_conf(conf):
@@ -45,6 +46,28 @@ def read_conf(conf):
 					if data.has_key('input'):
 						input.extend(data['input'])
 					data['input'] = input
+			elif section == 'tribe':
+				if 'name=' in line:
+					data['tribe'] = line[line.find('=') + 2:]
+			elif section == 'ware types':
+				if '=' in line:
+					id = line[:line.find('=')]
+					name = line[line.find('=') + 2:]
+
+					wares = [ { 'id': id, 'name': name } ]
+					if data.has_key('wares'):
+						wares.extend(data['wares'])
+					data['wares'] = wares
+			elif section in ['trainingsite types', 'militarysite types', 'warehouse types', 'productionsite types']:
+				if '=' in line:
+					id = line[:line.find('=')]
+					name = line[line.find('=') + 2:]
+
+					buildings = [ { 'id': id, 'name': name } ]
+					if data.has_key('buildings'):
+						buildings.extend(data['buildings'])
+					data['buildings'] = buildings
 	return data
 
-print read_conf(sys.argv[1])
+tribe_path = sys.argv[1]
+print read_conf(os.path.join(tribe_path, 'conf'))
