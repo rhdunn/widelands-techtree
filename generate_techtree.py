@@ -48,7 +48,7 @@ def read_conf(conf):
 					data['input'] = input
 			elif section == 'tribe':
 				if 'name=' in line:
-					data['tribe'] = line[line.find('=') + 2:]
+					data['tribe'] = line[line.find('=') + 3:]
 			elif section == 'ware types':
 				if '=' in line:
 					id = line[:line.find('=')]
@@ -70,4 +70,19 @@ def read_conf(conf):
 	return data
 
 tribe_path = sys.argv[1]
-print read_conf(os.path.join(tribe_path, 'conf'))
+data = read_conf(os.path.join(tribe_path, 'conf'))
+
+print 'digraph "Widelands %s Tribe Tech Tree"' % data['tribe']
+print '{'
+for ware in data['wares']:
+	print '	"%s" [shape=plaintext, label="%s"]' % (ware['id'], ware['name'])
+for building in data['buildings']:
+	print '	"%s" [shape=box, color=red, label="%s"]' % (building['id'], building['name'])
+	data = read_conf(os.path.join(tribe_path, building['id'], 'conf'))
+	if data.has_key('input'):
+		for input in data['input']:
+			print '	"%s" -> "%s"' % (input, building['id'])
+	if data.has_key('output'):
+		for output in data['output']:
+			print '	"%s" -> "%s"' % (building['id'], output)
+print '}'
