@@ -99,115 +99,115 @@ digraph "Widelands Barbarians Tribe Tech Tree"
 
 	// produces
 
-	"Fisher's Hut" -> "Fish"
-	"Gamekeeper's Hut" -> "Animals"
-	"Hunter's Hut" -> "Meat"
-	"Lumberjack's Hut" -> "Trunk"
-	"Quarry" -> "Raw Stone"
-	"Ranger's Hut" -> "Trees"
-	"Well" -> "Water"
+	"Fisher's Hut" -> "Fish" [color=green]
+	"Gamekeeper's Hut" -> "Animals" [color=green]
+	"Hunter's Hut" -> "Meat" [color=green]
+	"Lumberjack's Hut" -> "Trunk" [color=green]
+	"Quarry" -> "Raw Stone" [color=green]
+	"Ranger's Hut" -> "Trees" [color=green]
+	"Well" -> "Water" [color=green]
 
-	"Axe Factory" -> "Axes"
-	"War Mill" -> "War Axes"
-	"Bakery" -> "Pitta Bread"
-	"Charcoal Burner" -> "Coal"
-	"Wood Hardener" -> "Blackwood"
-	"Fernery" -> "Thatch Reed"
-	"Lime Kiln" -> "Grout"
-	"Metalwork Shop" -> "Tools"
-	"Micro Brewery" -> "Beer"
-	"Brewery" -> "Strong Beer"
-	"Smelting Works" -> "Iron"
-	"Smelting Works" -> "Gold"
-	"Tavern" -> "Ration"
-	"Inn" -> "Ration"
-	"Inn" -> "Snack"
-	"Big Inn" -> "Ration"
-	"Big Inn" -> "Snack"
-	"Big Inn" -> "Meal"
+	"Axe Factory" -> "Axes" [color=green]
+	"War Mill" -> "War Axes" [color=green]
+	"Bakery" -> "Pitta Bread" [color=green]
+	"Charcoal Burner" -> "Coal" [color=green]
+	"Wood Hardener" -> "Blackwood" [color=green]
+	"Fernery" -> "Thatch Reed" [color=green]
+	"Lime Kiln" -> "Grout" [color=green]
+	"Metalwork Shop" -> "Tools" [color=green]
+	"Micro Brewery" -> "Beer" [color=green]
+	"Brewery" -> "Strong Beer" [color=green]
+	"Smelting Works" -> "Iron" [color=green]
+	"Smelting Works" -> "Gold" [color=green]
+	"Tavern" -> "Ration" [color=green]
+	"Inn" -> "Ration" [color=green]
+	"Inn" -> "Snack" [color=green]
+	"Big Inn" -> "Ration" [color=green]
+	"Big Inn" -> "Snack" [color=green]
+	"Big Inn" -> "Meal" [color=green]
 
-	"Farm" -> "Wheat"
-	"Helmsmithy" -> "Helmets"
-	"Weaving Mill" -> "Cloth"
+	"Farm" -> "Wheat" [color=green]
+	"Helmsmithy" -> "Helmets" [color=green]
+	"Weaving Mill" -> "Cloth" [color=green]
 
-	"Coal Mine" -> "Coal"
-	"Gold Mine" -> "Goldstone"
-	"Granite Mine" -> "Raw Stone"
-	"Iron Ore Mine" -> "Iron Ore"
+	"Coal Mine" -> "Coal" [color=green]
+	"Gold Mine" -> "Goldstone" [color=green]
+	"Granite Mine" -> "Raw Stone" [color=green]
+	"Iron Ore Mine" -> "Iron Ore" [color=green]
 
-	"Deep Coal Mine" -> "Coal"
-	"Deep Gold Mine" -> "Goldstone"
-	"Deep Iron Ore Mine" -> "Iron Ore"
+	"Deep Coal Mine" -> "Coal" [color=green]
+	"Deep Gold Mine" -> "Goldstone" [color=green]
+	"Deep Iron Ore Mine" -> "Iron Ore" [color=green]
 
-	"Deeper Coal Mine" -> "Coal"
-	"Deeper Gold Mine" -> "Goldstone"
-	"Deeper Iron Ore Mine" -> "Iron Ore"
+	"Deeper Coal Mine" -> "Coal" [color=green]
+	"Deeper Gold Mine" -> "Goldstone" [color=green]
+	"Deeper Iron Ore Mine" -> "Iron Ore" [color=green]
 
 	// consumes
 
-	"Trees" -> "Lumberjack's Hut"
-	"Animals" -> "Hunter's Hut"
-	"Rocks" -> "Quarry"
+	"Trees" -> "Lumberjack's Hut" [color=magenta]
+	"Animals" -> "Hunter's Hut" [color=magenta]
+	"Rocks" -> "Quarry" [color=magenta]
 
-	"Iron" -> "Axe Factory"
-	"Coal" -> "Axe Factory"
-	"Gold" -> "War Mill"
-	"Iron" -> "War Mill"
-	"Coal" -> "War Mill"
-	"Wheat" -> "Bakery"
-	"Water" -> "Bakery"
-	"Trunk" -> "Charcoal Burner"
-	"Trunk" -> "Wood Hardener"
-	"Raw Stone" -> "Lime Kiln"
-	"Water" -> "Lime Kiln"
-	"Coal" -> "Lime Kiln"
-	"Trunk" -> "Metalwork Shop"
-	"Iron" -> "Metalwork Shop"
-	"Wheat" -> "Micro Brewery"
-	"Water" -> "Micro Brewery"
-	"Wheat" -> "Brewery"
-	"Water" -> "Brewery"
-	"Goldstone" -> "Smelting Works"
-	"Iron Ore" -> "Smelting Works"
-	"Coal" -> "Smelting Works"
-	"Fish" -> "Tavern"
-	"Meat" -> "Tavern"
-	"Pitta Bread" -> "Tavern"
-	"Fish" -> "Inn"
-	"Meat" -> "Inn"
-	"Beer" -> "Inn"
-	"Pitta Bread" -> "Inn"
-	"Fish" -> "Big Inn"
-	"Meat" -> "Big Inn"
-	"Beer" -> "Big Inn"
-	"Strong Beer" -> "Big Inn"
-	"Pitta Bread" -> "Big Inn"
+	"Iron" -> "Axe Factory" [color=magenta]
+	"Coal" -> "Axe Factory" [color=magenta]
+	"Gold" -> "War Mill" [color=magenta]
+	"Iron" -> "War Mill" [color=magenta]
+	"Coal" -> "War Mill" [color=magenta]
+	"Wheat" -> "Bakery" [color=magenta]
+	"Water" -> "Bakery" [color=magenta]
+	"Trunk" -> "Charcoal Burner" [color=magenta]
+	"Trunk" -> "Wood Hardener" [color=magenta]
+	"Raw Stone" -> "Lime Kiln" [color=magenta]
+	"Water" -> "Lime Kiln" [color=magenta]
+	"Coal" -> "Lime Kiln" [color=magenta]
+	"Trunk" -> "Metalwork Shop" [color=magenta]
+	"Iron" -> "Metalwork Shop" [color=magenta]
+	"Wheat" -> "Micro Brewery" [color=magenta]
+	"Water" -> "Micro Brewery" [color=magenta]
+	"Wheat" -> "Brewery" [color=magenta]
+	"Water" -> "Brewery" [color=magenta]
+	"Goldstone" -> "Smelting Works" [color=magenta]
+	"Iron Ore" -> "Smelting Works" [color=magenta]
+	"Coal" -> "Smelting Works" [color=magenta]
+	"Fish" -> "Tavern" [color=magenta]
+	"Meat" -> "Tavern" [color=magenta]
+	"Pitta Bread" -> "Tavern" [color=magenta]
+	"Fish" -> "Inn" [color=magenta]
+	"Meat" -> "Inn" [color=magenta]
+	"Beer" -> "Inn" [color=magenta]
+	"Pitta Bread" -> "Inn" [color=magenta]
+	"Fish" -> "Big Inn" [color=magenta]
+	"Meat" -> "Big Inn" [color=magenta]
+	"Beer" -> "Big Inn" [color=magenta]
+	"Strong Beer" -> "Big Inn" [color=magenta]
+	"Pitta Bread" -> "Big Inn" [color=magenta]
 
-	"Fish" -> "Battle Arena"
-	"Meat" -> "Battle Arena"
-	"Pitta Bread" -> "Battle Arena"
-	"Strong Beer" -> "Battle Arena"
-	"Thatch Reed" -> "Weaving Mill"
-	"Gold" -> "Helmsmithy"
-	"Iron" -> "Helmsmithy"
-	"Coal" -> "Helmsmithy"
-	"Fish" -> "Trainingscamp"
-	"Meat" -> "Trainingscamp"
-	"Pitta Bread" -> "Trainingscamp"
-	"Helmets" -> "Trainingscamp"
-	"Axes" -> "Trainingscamp"
-	"War Axes" -> "Trainingscamp"
+	"Fish" -> "Battle Arena" [color=magenta]
+	"Meat" -> "Battle Arena" [color=magenta]
+	"Pitta Bread" -> "Battle Arena" [color=magenta]
+	"Strong Beer" -> "Battle Arena" [color=magenta]
+	"Thatch Reed" -> "Weaving Mill" [color=magenta]
+	"Gold" -> "Helmsmithy" [color=magenta]
+	"Iron" -> "Helmsmithy" [color=magenta]
+	"Coal" -> "Helmsmithy" [color=magenta]
+	"Fish" -> "Trainingscamp" [color=magenta]
+	"Meat" -> "Trainingscamp" [color=magenta]
+	"Pitta Bread" -> "Trainingscamp" [color=magenta]
+	"Helmets" -> "Trainingscamp" [color=magenta]
+	"Axes" -> "Trainingscamp" [color=magenta]
+	"War Axes" -> "Trainingscamp" [color=magenta]
 
-	"Ration" -> "Coal Mine"
-	"Ration" -> "Gold Mine"
-	"Ration" -> "Granite Mine"
-	"Ration" -> "Iron Ore Mine"
+	"Ration" -> "Coal Mine" [color=magenta]
+	"Ration" -> "Gold Mine" [color=magenta]
+	"Ration" -> "Granite Mine" [color=magenta]
+	"Ration" -> "Iron Ore Mine" [color=magenta]
 
-	"Snack" -> "Deep Coal Mine"
-	"Snack" -> "Deep Gold Mine"
-	"Snack" -> "Deep Iron Ore Mine"
+	"Snack" -> "Deep Coal Mine" [color=magenta]
+	"Snack" -> "Deep Gold Mine" [color=magenta]
+	"Snack" -> "Deep Iron Ore Mine" [color=magenta]
 
-	"Meal" -> "Deeper Coal Mine"
-	"Meal" -> "Deeper Gold Mine"
-	"Meal" -> "Deeper Iron Ore Mine"
+	"Meal" -> "Deeper Coal Mine" [color=magenta]
+	"Meal" -> "Deeper Gold Mine" [color=magenta]
+	"Meal" -> "Deeper Iron Ore Mine" [color=magenta]
 }

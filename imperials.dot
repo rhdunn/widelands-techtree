@@ -96,114 +96,114 @@ digraph "Widelands Imperials Tribe Tech Tree"
 
 	// produces
 
-	"Fisher's House" -> "Fish"
-	"Forester's House" -> "Trees"
-	"Hunter's House" -> "Meat" // Is this correct? It isn't on the wiki page.
-	"Lumberjack's House" -> "Trunk"
-	"Quarry" -> "Stones"
-	"Quarry" -> "Marble"
-	"Well" -> "Water"
+	"Fisher's House" -> "Fish" [color=green]
+	"Forester's House" -> "Trees" [color=green]
+	"Hunter's House" -> "Meat" [color=green] // Is this correct? It isn't on the wiki page.
+	"Lumberjack's House" -> "Trunk" [color=green]
+	"Quarry" -> "Stones" [color=green]
+	"Quarry" -> "Marble" [color=green]
+	"Well" -> "Water" [color=green]
 
-	"Armour Smithy" -> "Armour"
-	"Bakery" -> "Bread"
-	"Brewery" -> "Beer"
-	"Charcoal Burner" -> "Coal"
-	"Mill" -> "Flour"
-	"Sawmill" -> "Wood"
-	"Smelting Works" -> "Gold"
-	"Smelting Works" -> "Iron"
-	"Stonemason's House" -> "Marble Column"
-	"Tavern" -> "Ration"
-	"Inn" -> "Meal"
-	"Toolsmithy" -> "Tools"
-	"Vineyard" -> "Grape"
-	"Winery" -> "Wine"
+	"Armour Smithy" -> "Armour" [color=green]
+	"Bakery" -> "Bread" [color=green]
+	"Brewery" -> "Beer" [color=green]
+	"Charcoal Burner" -> "Coal" [color=green]
+	"Mill" -> "Flour" [color=green]
+	"Sawmill" -> "Wood" [color=green]
+	"Smelting Works" -> "Gold" [color=green]
+	"Smelting Works" -> "Iron" [color=green]
+	"Stonemason's House" -> "Marble Column" [color=green]
+	"Tavern" -> "Ration" [color=green]
+	"Inn" -> "Meal" [color=green]
+	"Toolsmithy" -> "Tools" [color=green]
+	"Vineyard" -> "Grape" [color=green]
+	"Winery" -> "Wine" [color=green]
 
-	"Farm" -> "Wheat"
-	"Piggery" -> "Meat"
-	"Sheep Farm" -> "Wool"
-	"Weaving Mill" -> "Cloth"
-	"Weapon Smithy" -> "Weapons"
+	"Farm" -> "Wheat" [color=green]
+	"Piggery" -> "Meat" [color=green]
+	"Sheep Farm" -> "Wool" [color=green]
+	"Weaving Mill" -> "Cloth" [color=green]
+	"Weapon Smithy" -> "Weapons" [color=green]
 
-	"Coal Mine" -> "Coal"
-	"Gold Mine" -> "Goldstone"
-	"Iron Mine" -> "Iron Ore"
-	"Marble Mine" -> "Stones"
-	"Marble Mine" -> "Marble"
+	"Coal Mine" -> "Coal" [color=green]
+	"Gold Mine" -> "Goldstone" [color=green]
+	"Iron Mine" -> "Iron Ore" [color=green]
+	"Marble Mine" -> "Stones" [color=green]
+	"Marble Mine" -> "Marble" [color=green]
 
-	"Deep Coal Mine" -> "Coal"
-	"Deep Gold Mine" -> "Goldstone"
-	"Deep Iron Mine" -> "Iron Ore"
-	"Deep Marble Mine" -> "Stones"
-	"Deep Marble Mine" -> "Marble"
+	"Deep Coal Mine" -> "Coal" [color=green]
+	"Deep Gold Mine" -> "Goldstone" [color=green]
+	"Deep Iron Mine" -> "Iron Ore" [color=green]
+	"Deep Marble Mine" -> "Stones" [color=green]
+	"Deep Marble Mine" -> "Marble" [color=green]
 
 	// consumes
 
-	"Animals" -> "Hunter's House"
-	"Trees" -> "Lumberjack's House"
-	"Rocks" -> "Quarry"
+	"Animals" -> "Hunter's House" [color=magenta]
+	"Trees" -> "Lumberjack's House" [color=magenta]
+	"Rocks" -> "Quarry" [color=magenta]
 
-	"Gold" -> "Armour Smithy"
-	"Cloth" -> "Armour Smithy"
-	"Iron" -> "Armour Smithy"
-	"Coal" -> "Armour Smithy"
-	"Flour" -> "Bakery"
-	"Water" -> "Bakery"
-	"Wheat" -> "Brewery"
-	"Water" -> "Brewery"
-	"Trunk" -> "Charcoal Burner"
-	"Trunk" -> "Sawmill"
-	"Wheat" -> "Mill"
-	"Goldstone" -> "Smelting Works"
-	"Iron Ore" -> "Smelting Works"
-	"Coal" -> "Smelting Works"
-	"Marble" -> "Stonemason's House"
-	"Fish" -> "Tavern"
-	"Bread" -> "Tavern"
-	"Meat" -> "Tavern"
-	"Fish" -> "Inn"
-	"Bread" -> "Inn"
-	"Meat" -> "Inn"
-	"Trunk" -> "Toolsmithy"
-	"Iron" -> "Toolsmithy"
-	"Grape" -> "Winery"
+	"Gold" -> "Armour Smithy" [color=magenta]
+	"Cloth" -> "Armour Smithy" [color=magenta]
+	"Iron" -> "Armour Smithy" [color=magenta]
+	"Coal" -> "Armour Smithy" [color=magenta]
+	"Flour" -> "Bakery" [color=magenta]
+	"Water" -> "Bakery" [color=magenta]
+	"Wheat" -> "Brewery" [color=magenta]
+	"Water" -> "Brewery" [color=magenta]
+	"Trunk" -> "Charcoal Burner" [color=magenta]
+	"Trunk" -> "Sawmill" [color=magenta]
+	"Wheat" -> "Mill" [color=magenta]
+	"Goldstone" -> "Smelting Works" [color=magenta]
+	"Iron Ore" -> "Smelting Works" [color=magenta]
+	"Coal" -> "Smelting Works" [color=magenta]
+	"Marble" -> "Stonemason's House" [color=magenta]
+	"Fish" -> "Tavern" [color=magenta]
+	"Bread" -> "Tavern" [color=magenta]
+	"Meat" -> "Tavern" [color=magenta]
+	"Fish" -> "Inn" [color=magenta]
+	"Bread" -> "Inn" [color=magenta]
+	"Meat" -> "Inn" [color=magenta]
+	"Trunk" -> "Toolsmithy" [color=magenta]
+	"Iron" -> "Toolsmithy" [color=magenta]
+	"Grape" -> "Winery" [color=magenta]
 
-	"Fish" -> "Arena"
-	"Bread" -> "Arena"
-	"Meat" -> "Arena"
-	"Fish" -> "Colosseum"
-	"Bread" -> "Colosseum"
-	"Meat" -> "Colosseum"
-	"Wheat" -> "Piggery"
-	"Water" -> "Piggery"
-	"Wheat" -> "Sheep Farm"
-	"Water" -> "Sheep Farm"
-	"Wool" -> "Weaving Mill"
-	"Gold" -> "Weapon Smithy"
-	"Iron" -> "Weapon Smithy"
-	"Coal" -> "Weapon Smithy"
-	"Wood" -> "Weapon Smithy"
-	"Weapons" -> "Trainingscamp"
-	"Armour" -> "Trainingscamp"
-	"Fish" -> "Trainingscamp"
-	"Bread" -> "Trainingscamp"
-	"Meat" -> "Trainingscamp"
+	"Fish" -> "Arena" [color=magenta]
+	"Bread" -> "Arena" [color=magenta]
+	"Meat" -> "Arena" [color=magenta]
+	"Fish" -> "Colosseum" [color=magenta]
+	"Bread" -> "Colosseum" [color=magenta]
+	"Meat" -> "Colosseum" [color=magenta]
+	"Wheat" -> "Piggery" [color=magenta]
+	"Water" -> "Piggery" [color=magenta]
+	"Wheat" -> "Sheep Farm" [color=magenta]
+	"Water" -> "Sheep Farm" [color=magenta]
+	"Wool" -> "Weaving Mill" [color=magenta]
+	"Gold" -> "Weapon Smithy" [color=magenta]
+	"Iron" -> "Weapon Smithy" [color=magenta]
+	"Coal" -> "Weapon Smithy" [color=magenta]
+	"Wood" -> "Weapon Smithy" [color=magenta]
+	"Weapons" -> "Trainingscamp" [color=magenta]
+	"Armour" -> "Trainingscamp" [color=magenta]
+	"Fish" -> "Trainingscamp" [color=magenta]
+	"Bread" -> "Trainingscamp" [color=magenta]
+	"Meat" -> "Trainingscamp" [color=magenta]
 
-	"Beer" -> "Coal Mine"
-	"Ration" -> "Coal Mine"
-	"Wine" -> "Gold Mine"
-	"Ration" -> "Gold Mine"
-	"Beer" -> "Iron Mine"
-	"Ration" -> "Iron Mine"
-	"Wine" -> "Marble Mine"
-	"Ration" -> "Marble Mine"
+	"Beer" -> "Coal Mine" [color=magenta]
+	"Ration" -> "Coal Mine" [color=magenta]
+	"Wine" -> "Gold Mine" [color=magenta]
+	"Ration" -> "Gold Mine" [color=magenta]
+	"Beer" -> "Iron Mine" [color=magenta]
+	"Ration" -> "Iron Mine" [color=magenta]
+	"Wine" -> "Marble Mine" [color=magenta]
+	"Ration" -> "Marble Mine" [color=magenta]
 
-	"Beer" -> "Deep Coal Mine"
-	"Meal" -> "Deep Coal Mine"
-	"Wine" -> "Deep Gold Mine"
-	"Meal" -> "Deep Gold Mine"
-	"Beer" -> "Deep Iron Mine"
-	"Meal" -> "Deep Iron Mine"
-	"Wine" -> "Deep Marble Mine"
-	"Meal" -> "Deep Marble Mine"
+	"Beer" -> "Deep Coal Mine" [color=magenta]
+	"Meal" -> "Deep Coal Mine" [color=magenta]
+	"Wine" -> "Deep Gold Mine" [color=magenta]
+	"Meal" -> "Deep Gold Mine" [color=magenta]
+	"Beer" -> "Deep Iron Mine" [color=magenta]
+	"Meal" -> "Deep Iron Mine" [color=magenta]
+	"Wine" -> "Deep Marble Mine" [color=magenta]
+	"Meal" -> "Deep Marble Mine" [color=magenta]
 }
